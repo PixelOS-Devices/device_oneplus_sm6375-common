@@ -222,6 +222,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# HWUI
+TARGET_USES_VULKAN = true
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \

@@ -80,6 +80,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.blair.post_boot.sh",
+    src: "init.blair.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
     vendor: true,

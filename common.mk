@@ -236,6 +236,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
+    init.blair.post_boot.sh \
     init.oplus.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \

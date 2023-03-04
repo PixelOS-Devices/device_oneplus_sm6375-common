@@ -225,6 +225,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
+    init.lahaina.post_boot.sh \
     init.oplus.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \

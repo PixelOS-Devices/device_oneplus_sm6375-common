@@ -1,23 +1,31 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_13.1.0.591(EX01)).
+## from OnePlus Nord CE 2 Lite 5G (CPH2381_11.C.31).
 
 # ACDBs
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_General_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Global_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/holi-qrdsku1-snd-card/QRD_SKU1_workspaceFile.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/dspservice
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib/libadsp_default_listener.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libloadalgo_stub.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP modules
@@ -27,37 +35,22 @@ vendor/lib/rfsa/adsp/bm2n12.bin
 vendor/lib/rfsa/adsp/bm2n13.bin
 vendor/lib/rfsa/adsp/bm2n14.bin
 vendor/lib/rfsa/adsp/bm2n15.bin
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
-vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
-vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
-vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
 vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_2_1.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhdr_skel.so
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
-vendor/lib/rfsa/adsp/libosie_skel.so
-vendor/lib/rfsa/adsp/libpmucount_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/libsuper_res_networks.so
-vendor/lib/rfsa/adsp/libvpp_ais_networks.so
-vendor/lib/rfsa/adsp/libvpt_action_recognition.so
-vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
@@ -120,18 +113,19 @@ vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
+vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
 
 # CNE
 vendor/app/CneApp/CneApp.apk
@@ -203,9 +197,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # CVP
-vendor/etc/cvp/v2.0/facedetection/model1.dat
-vendor/etc/cvp/v2.1/facedetection/model2.dat
-vendor/lib64/libcvp2_1.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
@@ -218,22 +209,14 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display (CWB)
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml
-odm/lib64/vendor.oplus.hardware.cwb@1.0.so
-vendor/lib64/libcwb_sm8350.so
-
 # Display (Features)
-vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
-vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-vendor/etc/Oplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm
+vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-odm/lib64/libsnapdragoncolor-pxlw.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
@@ -267,12 +250,15 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
 # Display calibration data
-vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/ltm_config_samsung_amb670yf01_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb670yf01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_fhd_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_cost_ili7807s_22667_fhd_plus_mipi_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_dsjm_ili7807s_21707_fhd_plus_mipi_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_jdi_td4377_21707_fhd_plus_mipi_panel_with_DSC.xml
+vendor/etc/qdcm_calib_data_nt36672c_dsjm_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_tm_fhd_plus_video_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_nt36672c_video_mode_dsi_fhd_panel.xml
+vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml
+vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_120Hz_Video_panel.xml
+vendor/etc/qdcm_calib_data_nt36672e_fhd_plus_144Hz_video_panel.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -326,8 +312,8 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
-vendor/lib64/libspl.so
 vendor/lib64/libssd.so
+vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # Gatekeeper
@@ -458,8 +444,8 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 # Hotword Enrollment
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogle.apk
-my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogle.apk
+my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -526,35 +512,13 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# Iris
-odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
-odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
-odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
-odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
-odm/lib64/libpwirisIoctlWrapper.so
-odm/lib64/libpwirisPCS.so
-odm/lib64/libpwiriscalibrate.so
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
-odm/lib64/libpwirispq.so
-odm/lib64/libpwirisservice.so
-odm/lib64/libpwirissoft.so
-odm/lib64/libpwsoftirisPCS.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/libpwirisfeature.so
-vendor/lib64/libpwirishalwrapper.so
-
 # IRQ balance
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
 # Kernel
-vendor/bin/init.kernel.post_boot-lahaina.sh
-vendor/bin/init.kernel.post_boot-yupik.sh
+vendor/bin/init.kernel.post_boot-blair.sh
+vendor/bin/init.kernel.post_boot-holi.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/vendor_modprobe.sh
@@ -580,12 +544,6 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
 # Media
-odm/lib/libaiboost_qnn_sr.so
-odm/lib/libaiboost_sr.so
-odm/lib/libaiboost_ubwc.so
-odm/lib/liboplusvppfilter.so
-odm/lib/libosie_process.so
-odm/lib/libosie_stub.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
@@ -593,28 +551,24 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/media/video_system_specs.json
-vendor/etc/media_lahaina/video_system_specs.json
-vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/media_blair/video_system_specs.json
+vendor/etc/media_holi/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_lahaina.xml
-vendor/etc/media_codecs_lahaina_vendor.xml
+vendor/etc/media_codecs_blair.xml
+vendor/etc/media_codecs_holi.xml
 vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_performance_lahaina.xml
-vendor/etc/media_codecs_performance_lahaina_vendor.xml
-vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_codecs_performance_blair.xml
+vendor/etc/media_codecs_performance_holi.xml
 vendor/etc/media_codecs_vendor_audio.xml
-vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_lahaina.xml
-vendor/etc/media_profiles_lahaina_vendor.xml
-vendor/etc/media_profiles_yupik_v1.xml
+vendor/etc/media_profiles_blair.xml
+vendor/etc/media_profiles_holi.xml
+vendor/etc/media_profiles_vendor.xml
 vendor/etc/video_system_specs.json
-vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -628,15 +582,12 @@ vendor/lib64/libmmosal.so
 vendor/etc/public.libraries.txt
 
 # Neural networks
-odm/lib64/libQnnHtpAltPrepStub.so
-odm/lib64/libQnnHtpStub.so
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib64/libQnnHtpAltPrepStub.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-gpu.so
-vendor/lib64/unnhal-acc-htp.so
+vendor/lib64/unnhal-acc-hvx.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -680,11 +631,10 @@ vendor/lib64/libOmxWmaDec.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
-vendor/lib64/libspcom.so
 
 # Perf
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
+odm/lib/vendor.oplus.hardware.performance@1.0.so
+odm/lib64/vendor.oplus.hardware.performance@1.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
@@ -713,23 +663,16 @@ vendor/lib64/libqti-utils.so
 vendor/lib64/libskewknob.so
 
 # Perf LM
-vendor/etc/lm/prekill/prekill_2GB.data
-vendor/etc/lm/prekill/prekill_4GB.data
-vendor/etc/lm/prekill/prekill_6GB.data
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/lm/PreKillFeature.xml
-vendor/etc/lm/gPLAFFeature.xml
 vendor/etc/lm/sPLHFeature.xml
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libgameoptfeature.so
-vendor/lib64/libgplaf.so
 vendor/lib64/liblmutils-ns.so
 vendor/lib64/libmemperfd.so
 vendor/lib64/libmeters-ns.so
-vendor/lib64/libprekill.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/libsplh.so
@@ -807,13 +750,7 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
-odm/lib64/lib-virtual-modem-protos.so
-odm/lib64/libcommcenterfw.so
-odm/lib64/libcommcenterutils.so
-odm/lib64/libdmtp-protos-lite.so
-odm/lib64/libdmtpclient.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
-odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -937,43 +874,9 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/etc/sensors/config/faroe_ak991x_0.json
-vendor/etc/sensors/config/faroe_bu52053nvx_0.json
-vendor/etc/sensors/config/faroe_default_sensors.json
-vendor/etc/sensors/config/faroe_dynamic_sensors.json
-vendor/etc/sensors/config/faroe_idp_ak991x_0.json
-vendor/etc/sensors/config/faroe_idp_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_idp_lsm6dst_1.json
-vendor/etc/sensors/config/faroe_irq.json
-vendor/etc/sensors/config/faroe_lps22hh_0.json
-vendor/etc/sensors/config/faroe_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_lsm6dst_1.json
-vendor/etc/sensors/config/faroe_power_0.json
-vendor/etc/sensors/config/faroe_qrd_ak991x_0.json
-vendor/etc/sensors/config/faroe_qrd_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_qrd_sx932x_0.json
-vendor/etc/sensors/config/faroe_qrd_tmd3702_0.json
-vendor/etc/sensors/config/faroe_sx932x_0.json
-vendor/etc/sensors/config/faroe_tmd3702_0.json
-vendor/etc/sensors/config/faroe_vertigo_ak991x_0.json
-vendor/etc/sensors/config/faroe_vertigo_lsm6dst_0.json
-vendor/etc/sensors/config/faroe_vertigo_lsm6dst_1.json
-vendor/etc/sensors/config/kodiak_qrd_ak991x_0.json
-vendor/etc/sensors/config/kodiak_qrd_ak991x_1.json
-vendor/etc/sensors/config/kodiak_tmd3702_0.json
-vendor/etc/sensors/config/lahaina_default_sensors.json
-vendor/etc/sensors/config/lahaina_dynamic_sensors.json
-vendor/etc/sensors/config/lahaina_hdk_ak991x_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_0.json
-vendor/etc/sensors/config/lahaina_hdk_lsm6dst_1.json
-vendor/etc/sensors/config/lahaina_hdk_sx932x_0.json
-vendor/etc/sensors/config/lahaina_hdk_tmd2725_0.json
-vendor/etc/sensors/config/lahaina_hhg_ak991x_0.json
-vendor/etc/sensors/config/lahaina_hhg_lsm6dst_0.json
-vendor/etc/sensors/config/lahaina_hhg_sx9302x_0.json
-vendor/etc/sensors/config/lahaina_hhg_tmd3702_0.json
-vendor/etc/sensors/config/lahaina_irq.json
-vendor/etc/sensors/config/lahaina_power_0.json
+vendor/etc/sensors/config/holi_default_sensors.json
+vendor/etc/sensors/config/holi_dynamic_sensors.json
+vendor/etc/sensors/config/holi_power_0.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -1009,6 +912,18 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
+vendor/etc/sensors/config/strait_ak991x_0.json
+vendor/etc/sensors/config/strait_bu52053nvx_0.json
+vendor/etc/sensors/config/strait_default_sensors.json
+vendor/etc/sensors/config/strait_dynamic_sensors.json
+vendor/etc/sensors/config/strait_icp101xx_0.json
+vendor/etc/sensors/config/strait_lsm6dst_0.json
+vendor/etc/sensors/config/strait_power_0.json
+vendor/etc/sensors/config/strait_qrd_ak991x_0.json
+vendor/etc/sensors/config/strait_qrd_lsm6dst_0.json
+vendor/etc/sensors/config/strait_qrd_tmd2725.json
+vendor/etc/sensors/config/strait_tmd2725.json
+vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libsensorcal.so
@@ -1061,56 +976,119 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware
-odm/firmware/tp/19815/FW_S3908_SAMSUNG.img
-odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin
-odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin
-odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img
-odm/firmware/tp/20031/FW_S3908_SAMSUNG.img
-odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/20085/FW_S3908_BOE.img
-odm/firmware/tp/20085/FW_S3908_BOE_FAE.img
-odm/firmware/tp/20085/FW_ST80Y_SAMSUNG.img
-odm/firmware/tp/20085/FW_ST80Y_SAMSUNG_FAE.img
-odm/firmware/tp/20085/LIMIT_S3908_BOE.img
-odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG.img
-odm/firmware/tp/20085/LIMIT_ST80Y_SAMSUNG_AGING.img
-odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img
-odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img
-odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img
-odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin
-odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin
-odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img
-odm/firmware/tp/20820/FW_S3908_SAMSUNG.img
-odm/firmware/tp/20820/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/20820/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21005/FW_S3908_BOE.img
-odm/firmware/tp/21005/FW_S3908_BOE_FAE.img
-odm/firmware/tp/21005/FW_S3908_SAMSUNG.img
-odm/firmware/tp/21005/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/21005/LIMIT_S3908_BOE.img
-odm/firmware/tp/21005/LIMIT_S3908_BOE_AGING.img
-odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21005/LIMIT_S3908_SAMSUNG_AGING.img
-odm/firmware/tp/21031/FW_FT3518_SAMSUNG.img
-odm/firmware/tp/21031/FW_FT3518_SAMSUNG_FAE.img
-odm/firmware/tp/21031/LIMIT_FT3518_SAMSUNG.img
-odm/firmware/tp/21051/FW_S3908_SAMSUNG.img
-odm/firmware/tp/21051/FW_S3908_SAMSUNG_FAE.img
-odm/firmware/tp/21051/LIMIT_S3908_SAMSUNG.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_BOE_FAE.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM.img
-odm/firmware/tp/21075/FW_NF_ILI7807S_DSJM_FAE.img
-odm/firmware/tp/21075/LIMIT_NF_ILI7807S_BOE.img
-odm/firmware/tp/21075/LIMIT_NF_ILI7807S_DSJM.img
-odm/firmware/tp/21147/FW_FT3658U_SAMSUNG.img
-odm/firmware/tp/21147/FW_FT3658U_SAMSUNG_FAE.img
-odm/firmware/tp/21147/LIMIT_FT3658U_SAMSUNG.img
-odm/firmware/tp/21617/FW_FT3658U_SAMSUNG.img
-odm/firmware/tp/21617/FW_FT3658U_SAMSUNG_FAE.img
-odm/firmware/tp/21617/LIMIT_FT3658U_SAMSUNG.img
+odm/firmware/tp/20121/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/20121/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/20121/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/20121/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/20121/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/20121/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/21039/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/21039/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21095/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21095/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21095/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/21095/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/21095/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21095/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/21095/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/21221/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21221/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21221/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/21291/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/21291/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/21341/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21341/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21341/LIMIT_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21629/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21629/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21629/LIMIT_NF_ILI7807S_DSJM.ini
+odm/firmware/tp/2162B/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/2162B/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/2162B/LIMIT_NF_ILI7807S_DSJM.ini
+odm/firmware/tp/21653/FW_NT36523_BOE_TEST.bin
+odm/firmware/tp/21653/LIMIT_NT36523_BOE.img
+odm/firmware/tp/216E9/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216E9/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/216E9/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/216E9/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216E9/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/216E9/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/216EA/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/216EA/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/216EA/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/216EA/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21707/FW_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21707/FW_NF_ILI7807S_DSJM_FAE.img
+odm/firmware/tp/21707/FW_NF_TD4377_DSJM.img
+odm/firmware/tp/21707/FW_NF_TD4377_DSJM_FAE.img
+odm/firmware/tp/21707/LIMIT_NF_ILI7807S_DSJM.img
+odm/firmware/tp/21707/LIMIT_NF_TD4377_DSJM.img
+odm/firmware/tp/21708/FW_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/21708/FW_NF_ILI7807S_TIANMA_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_DSJM_TEST.bin
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA.img
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA_FAE.img
+odm/firmware/tp/21708/FW_NF_NT36672C_TIANMA_TEST.bin
+odm/firmware/tp/21708/LIMIT_NF_ILI7807S_TIANMA.img
+odm/firmware/tp/21708/LIMIT_NF_NT36672C_DSJM.img
+odm/firmware/tp/21708/LIMIT_NF_NT36672C_TIANMA.img
+odm/firmware/tp/22035/FW_FT3681_BOE.img
+odm/firmware/tp/22035/FW_FT3681_BOE_FAE.img
+odm/firmware/tp/22035/FW_FT3681_BOE_sys_edge_touch_config.img
+odm/firmware/tp/22035/FW_S3910_TIANMA.img
+odm/firmware/tp/22035/FW_S3910_TIANMA_FAE.img
+odm/firmware/tp/22035/FW_S3910_TIANMA_sys_edge_touch_config.img
+odm/firmware/tp/22035/LIMIT_FT3681_BOE.img
+odm/firmware/tp/22035/LIMIT_S3910_TIANMA.img
+odm/firmware/tp/22041/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/22041/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/22041/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/22041/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/22041/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/22041/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/22041/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/22241/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/22241/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/22241/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/22241/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/22241/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/22241/LIMIT_FT3518_SAMSUNG_AGING.img
+odm/firmware/tp/22241/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/22601/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22601/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22601/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22602/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22602/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22602/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22667/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22668/LIMIT_NF_ILI7807S_HUAXING.img
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -1127,143 +1105,7 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Vibrator firmware
-odm/firmware/100ms_RTP.bin
-odm/firmware/120ms_RTP.bin
-odm/firmware/140ms_RTP.bin
-odm/firmware/160ms_RTP.bin
-odm/firmware/180ms_RTP.bin
-odm/firmware/200ms_RTP.bin
-odm/firmware/20ms_RTP.bin
-odm/firmware/220ms_RTP.bin
-odm/firmware/240ms_RTP.bin
-odm/firmware/260ms_RTP.bin
-odm/firmware/280ms_RTP.bin
-odm/firmware/300ms_RTP.bin
-odm/firmware/320ms_RTP.bin
-odm/firmware/340ms_RTP.bin
-odm/firmware/360ms_RTP.bin
-odm/firmware/380ms_RTP.bin
-odm/firmware/400ms_RTP.bin
-odm/firmware/40ms_RTP.bin
-odm/firmware/420ms_RTP.bin
-odm/firmware/440ms_RTP.bin
-odm/firmware/460ms_RTP.bin
-odm/firmware/480ms_RTP.bin
-odm/firmware/500ms_RTP.bin
-odm/firmware/60ms_RTP.bin
-odm/firmware/80ms_RTP.bin
-odm/firmware/AT500ms_RTP.bin
-odm/firmware/VZW_Alrwave_RTP.bin
-odm/firmware/Version_Alert_RTP.bin
-odm/firmware/alarm_Alarm_clock_RTP.bin
-odm/firmware/alarm_Beep_RTP.bin
-odm/firmware/alarm_Breeze_RTP.bin
-odm/firmware/alarm_Dawn_RTP.bin
-odm/firmware/alarm_Dream_RTP.bin
-odm/firmware/alarm_Fluttering_RTP.bin
-odm/firmware/alarm_Flyer_RTP.bin
-odm/firmware/alarm_Interesting_RTP.bin
-odm/firmware/alarm_Leisurely_RTP.bin
-odm/firmware/alarm_Memory_RTP.bin
-odm/firmware/alarm_Relieved_RTP.bin
-odm/firmware/alarm_Ripple_RTP.bin
-odm/firmware/alarm_Slowly_RTP.bin
-odm/firmware/alarm_Stars_RTP.bin
-odm/firmware/alarm_Surging_RTP.bin
-odm/firmware/alarm_The_wind_RTP.bin
-odm/firmware/alarm_Walking_in_the_rain_RTP.bin
-odm/firmware/alarm_spring_RTP.bin
-odm/firmware/alarm_tactfully_RTP.bin
-odm/firmware/aw8697_haptic.bin
-odm/firmware/aw8697_haptic_166.bin
-odm/firmware/aw8697_haptic_168.bin
-odm/firmware/aw8697_haptic_170.bin
-odm/firmware/aw8697_haptic_172.bin
-odm/firmware/aw8697_haptic_174.bin
-odm/firmware/aw8697_rtp.bin
-odm/firmware/aw8697_rtp_lighthouse.bin
-odm/firmware/aw8697_rtp_silk.bin
-odm/firmware/awinic_haptic_gun_params.bin
-odm/firmware/awinic_haptic_params.bin
-odm/firmware/notif_Allay_RTP.bin
-odm/firmware/notif_Allusion_RTP.bin
-odm/firmware/notif_Amiable_RTP.bin
-odm/firmware/notif_Blare_RTP.bin
-odm/firmware/notif_Blissful_RTP.bin
-odm/firmware/notif_Brisk_RTP.bin
-odm/firmware/notif_Bubble_RTP.bin
-odm/firmware/notif_Cheerful_RTP.bin
-odm/firmware/notif_Clear_RTP.bin
-odm/firmware/notif_Comely_RTP.bin
-odm/firmware/notif_Cozy_RTP.bin
-odm/firmware/notif_Ding_RTP.bin
-odm/firmware/notif_Effervesce_RTP.bin
-odm/firmware/notif_Elegant_RTP.bin
-odm/firmware/notif_Free_RTP.bin
-odm/firmware/notif_Hallucination_RTP.bin
-odm/firmware/notif_Inbound_RTP.bin
-odm/firmware/notif_Light_RTP.bin
-odm/firmware/notif_Meet_RTP.bin
-odm/firmware/notif_Naivety_RTP.bin
-odm/firmware/notif_Quickly_RTP.bin
-odm/firmware/notif_Rhythm_RTP.bin
-odm/firmware/notif_Surprise_RTP.bin
-odm/firmware/notif_Twinkle_RTP.bin
-odm/firmware/ring_Amenity_RTP.bin
-odm/firmware/ring_Bounce_RTP.bin
-odm/firmware/ring_Calm_RTP.bin
-odm/firmware/ring_Lazy_RTP.bin
-odm/firmware/ring_Mystical_RTP.bin
-odm/firmware/ring_Whirl_RTP.bin
-odm/firmware/ringtone_Alacrity_RTP.bin
-odm/firmware/ringtone_Blues_RTP.bin
-odm/firmware/ringtone_Cloud_RTP.bin
-odm/firmware/ringtone_Cyclotron_RTP.bin
-odm/firmware/ringtone_Distinct_RTP.bin
-odm/firmware/ringtone_Dynamic_RTP.bin
-odm/firmware/ringtone_Eager.bin
-odm/firmware/ringtone_Ebullition.bin
-odm/firmware/ringtone_Echo_RTP.bin
-odm/firmware/ringtone_Expect_RTP.bin
-odm/firmware/ringtone_Fanatical_RTP.bin
-odm/firmware/ringtone_Friendship.bin
-odm/firmware/ringtone_Funky_RTP.bin
-odm/firmware/ringtone_Guitar_RTP.bin
-odm/firmware/ringtone_Harping_RTP.bin
-odm/firmware/ringtone_Highlight_RTP.bin
-odm/firmware/ringtone_Idyl_RTP.bin
-odm/firmware/ringtone_Innocence_RTP.bin
-odm/firmware/ringtone_Jazz_life_RTP.bin
-odm/firmware/ringtone_Journey_RTP.bin
-odm/firmware/ringtone_Joyous_RTP.bin
-odm/firmware/ringtone_Marimba_RTP.bin
-odm/firmware/ringtone_Old_telephone_RTP.bin
-odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin
-odm/firmware/ringtone_Oneplus_tune_RTP.bin
-odm/firmware/ringtone_Optimistic_RTP.bin
-odm/firmware/ringtone_Piano_RTP.bin
-odm/firmware/ringtone_Rhythm_RTP.bin
-odm/firmware/ringtone_Sun_glittering_RTP.bin
-odm/firmware/shuntai24k_rtp.bin
-odm/firmware/t-jingle_RTP.bin
-odm/firmware/wentai24k_rtp.bin
-
 # VPP
-vendor/bin/hw/qconfigservice
-vendor/bin/vppservice
-vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/qconfig.rc
-vendor/etc/init/vppservice.rc
-vendor/etc/qconfigpresets.json
-vendor/lib/libqconfigclient.so
-vendor/lib/vendor.qti.hardware.qconfig@1.0.so
-vendor/lib/vendor.qti.hardware.vpp@2.0.so
-vendor/lib64/libqconfigclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
@@ -1276,12 +1118,10 @@ odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 odm/lib64/mediadrm/libwvdrmengine.so
 odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
-vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 

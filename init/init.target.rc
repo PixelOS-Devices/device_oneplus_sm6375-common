@@ -123,7 +123,7 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss_mdm"
-    setprop vendor.usb.controller a600000.dwc3
+    setprop vendor.usb.controller 4e00000.dwc3
     #Load WLAN driver
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/ qca_cld3_wlan qca_cld3_qca6390
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki qca_cld3_wlan qca_cld3_qca6390
@@ -146,7 +146,7 @@ on init && property:ro.boot.mode=charger
 
 on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
-    setprop sys.usb.controller a600000.dwc3
+    setprop sys.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
 
 service vendor.lowi /vendor/bin/lowirpcd

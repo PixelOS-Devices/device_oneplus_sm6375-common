@@ -71,7 +71,7 @@
       "Name": "CPUBigClusterDownRateLimit",
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us",
       "Values": [
-        "10000",
+        "20000",
         "2000"
       ],
       "ResetOnInit": true
@@ -81,8 +81,8 @@
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
         "0",
-        "40",
-        "60"
+        "50",
+        "75"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -101,7 +101,7 @@
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
         "0",
-        "50"
+        "100"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -298,7 +298,7 @@
       "PowerHint": "INTERACTION",
       "Node": "UclampTAMin",
       "Duration": 0,
-      "Value": "40"
+      "Value": "50"
     },
     {
       "PowerHint": "INTERACTION",
@@ -382,7 +382,7 @@
       "PowerHint": "INTERACTIVE",
       "Node": "CPUBigClusterDownRateLimit",
       "Duration": 0,
-      "Value": "10000"
+      "Value": "20000"
     },
     {
       "PowerHint": "INTERACTIVE",
@@ -412,13 +412,13 @@
       "PowerHint": "LAUNCH",
       "Node": "UclampTAMin",
       "Duration": 3000,
-      "Value": "60"
+      "Value": "75"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampFgMin",
       "Duration": 3000,
-      "Value": "50"
+      "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",

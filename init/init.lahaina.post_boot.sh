@@ -26,6 +26,10 @@ echo 0-3 > /dev/cpuset/system-background/cpus
 echo 0-3 > /dev/cpuset/restricted/cpus
 echo 1-2 > /dev/cpuset/audio-app/cpus
 
+#Sched
+echo 95 > /proc/sys/kernel/sched_upmigrate
+echo 85 > /proc/sys/kernel/sched_downmigrate
+
 # uclamp tuning
 echo 50 > /dev/cpuctl/background/cpu.uclamp.max
 echo 50 > /dev/cpuctl/system-background/cpu.uclamp.max

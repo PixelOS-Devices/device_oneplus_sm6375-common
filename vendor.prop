@@ -101,6 +101,9 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.secure_preview_buffer_format=420_sp
+vendor.gralloc.secure_preview_buffer_format=420_sp
+vendor.gralloc.secure_preview_only=1
 
 # DRM
 drm.service.enabled=true

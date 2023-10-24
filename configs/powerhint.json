@@ -64,7 +64,8 @@
       "Values": [
         "0",
         "50",
-        "75"
+        "75",
+        "100"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -151,7 +152,7 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "650000000",
+        "840000000",
         "490000000",
         "266000000"
       ],
@@ -291,12 +292,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "UclampFgMin",
-      "Duration": 0,
-      "Value": "25"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "SchedPreferSpread",
       "Duration": 0,
       "Value": "2"
@@ -347,7 +342,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
       "Duration": 0,
-      "Value": "3879"
+      "Value": "7980"
     },
     {
       "PowerHint": "INTERACTIVE",
@@ -389,7 +384,7 @@
       "PowerHint": "LAUNCH",
       "Node": "UclampTAMin",
       "Duration": 3000,
-      "Value": "75"
+      "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
@@ -449,13 +444,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "490000000"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "650000000"
+      "Value": "840000000"
     },
     {
       "PowerHint": "Flipendo",

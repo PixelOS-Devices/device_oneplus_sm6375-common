@@ -27,25 +27,6 @@ void OverrideProperty(const char* name, const char* value) {
     }
 }
 
-void init_rftype_properties()
-{
-    char const *rftype_file = "/proc/oplusVersion/RFType";
-    std::string rftype;
-
-    if (ReadFileToString(rftype_file, &rftype)) {
-
-        if (rftype == "4") {
-             OverrideProperty("ro.product.product.model", "CPH2409");
-        }
-        else if (rftype == "8") {
-             OverrideProperty("ro.product.product.model", "CPH2381");
-        }
-    }
-    else {
-        LOG(ERROR) << "Unable to read rftype from " << rftype_file;
-    }
-}
-
 /*
  * Only for read-only properties. Properties that can be wrote to more
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
@@ -55,6 +36,7 @@ void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+    auto sku = std::stoi(GetProperty("ro.boot.product.hardware.sku", "0"));
 
     switch (prjname) {
         // lunaa
@@ -117,5 +99,15 @@ void vendor_load_properties() {
         default:
             LOG(ERROR) << "Unexpected RF version: " << rf_version;
     }
-    init_rftype_properties();
+    switch (sku) {
+            // oscaro
+        case 2: // IN
+            OverrideProperty("ro.product.product.model", "CPH2381");
+            break;
+        case 6: // GL
+            OverrideProperty("ro.product.product.model", "CPH2409");
+            break;
+        default:
+            LOG(ERROR) << "Unexpected SKU: " << sku;
+        }
 }

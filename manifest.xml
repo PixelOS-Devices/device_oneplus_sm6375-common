@@ -447,15 +447,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.vpp</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IHidlVppService</name>
-            <instance>vppService</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <transport>hwbinder</transport>
         <version>1.0</version>

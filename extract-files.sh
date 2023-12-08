@@ -81,7 +81,7 @@ function blob_fixup() {
             sed -i "s/uag/schedutil/" "${2}"
             ;;
         vendor/etc/media_*/video_system_specs.json)
-            sed -i "/max_retry_alloc_output_timeout/ s/1000/0/" "${2}"
+            sed -i -E "/max_retry_alloc_output_timeout/ s/([0-9]+)/0/" "${2}"
             ;;
         vendor/etc/libnfc-nci.conf)
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"

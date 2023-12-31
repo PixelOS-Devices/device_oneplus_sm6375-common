@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 PRODUCT_PACKAGES += \
+    android.frameworks.stats@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera_metadata_shim \
@@ -144,6 +145,7 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libtinyxml \
+    libtinyxml2 \
     memtrack.default \
     vendor.display.config@1.0 \
     vendor.display.config@1.15.vendor \
@@ -470,7 +472,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    vendor.qti.hardware.display.config-V5-ndk
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

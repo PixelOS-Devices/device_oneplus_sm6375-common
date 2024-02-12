@@ -56,8 +56,7 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libssrec \
     libstdc++_vendor \
-    libvolumelistener \
-    sound_trigger.primary.holi:32
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     DolbyManager

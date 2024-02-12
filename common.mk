@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     init.qti.display_boot.rc \
-    init.qti.display_boot.sh \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libmemutils \
@@ -244,6 +243,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.qti.display_boot \
     init.target.rc \
     ueventd.oplus.rc \
     ueventd.qcom.rc

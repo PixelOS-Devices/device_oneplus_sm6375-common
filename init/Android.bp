@@ -90,3 +90,10 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+
+sh_binary {
+    name: "init.qti.display_boot",
+    filename: "init.qti.display_boot.sh",
+    src: "init.qti.display_boot.sh",
+    vendor: true,
+}

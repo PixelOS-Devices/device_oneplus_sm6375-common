@@ -50,6 +50,84 @@ on boot
     chown cameraserver cameraserver /sys/kernel/tof_control/chip_enable
     chown cameraserver cameraserver /sys/kernel/tof_control/driver_debug
 
+    # Charger
+    chown system system /sys/class/power_supply/battery/short_c_batt_in_idle
+    chown system system /sys/class/power_supply/battery/short_c_batt_update_change
+    chown system system /sys/class/power_supply/battery/short_c_hw_feature
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_chg
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_rechg
+    chown system system /sys/class/power_supply/battery/short_ic_volt_thresh
+    chown system system /sys/class/power_supply/battery/short_ic_otp_status
+    chown system system /sys/class/power_supply/battery/ship_mode
+    chown system system /sys/class/power_supply/battery/cool_down
+    chown system system /sys/class/power_supply/usb/otg_switch
+
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_chg
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_rechg
+    chown system system /sys/class/oplus_chg/battery/short_ic_volt_thresh
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_value
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/class/power_supply/usb/type
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_tbat
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /sys/class/oplus_chg/battery/bms_heat_temp_compensation
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_count
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_status
+    chown system system /sys/class/oplus_chg/common/bob_status
+    chown system system /sys/class/oplus_chg/common/bob_status_reg
+    chown system system /sys/class/oplus_chg/common/time_zone
+
+    chown system system /sys/class/power_supply/battery/smooth_switch
+    chown system system /sys/class/power_supply/battery/soc_notify_ready
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/usb/type
+    chown system system /sys/class/power_supply/battery/restore_soc
+    chown system system /sys/class/power_supply/battery/soc_reporting_ready
+    chown system system /sys/class/power_supply/battery/battery_info
+    chown system system /sys/class/power_supply/battery/battery_info_id
+
+    chown system system /proc/charger/hmac
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/class/oplus_chg/battery/em_mode
+    chown system system /dev/oplus_chg
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_test
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_status
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_tbat
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /sys/class/oplus_chg/battery/bms_heat_temp_compensation
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_count
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_status
+    chown system system /sys/class/oplus_chg/common/bob_status
+    chown system system /sys/class/oplus_chg/common/bob_status_reg
+    chown system system /sys/class/oplus_chg/common/time_zone
+
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
@@ -59,6 +137,82 @@ on property:sys.boot_completed=1
     copy /vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
+
+    # Charger
+    write /proc/ui_soc_decimal 1
+    chmod 0666 /sys/class/power_supply/battery/current_now
+    chown system system /sys/class/oplus_chg/wireless/status_keep
+    chmod 0666 /sys/class/oplus_wireless/pencil/rx_soc
+    chmod 0666 /sys/class/oplus_wireless/pencil/present
+    chmod 0666 /sys/class/oplus_chg/battery/normal_cool_down
+    chmod 0666 /sys/class/oplus_chg/battery/normal_current_now
+    chown system system /sys/class/oplus_chg/battery/aging_ffc_data
+    chmod 0666 /sys/class/oplus_chg/common/track_hidl
+    chmod 0644 /dev/chg_test_kit
+    chown system system /dev/chg_test_kit
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_tbat
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_ibat
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_soc
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_vbat
+    chown system system /sys/module/oplus_gauge/parameters/sub_gauge_dbg_ibat
+    chown system system /sys/module/oplus_gauge/parameters/sub_gauge_dbg_tbat
+    chown system system /sys/module/oplus_gauge/parameters/sub_gauge_dbg_vbat
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_ibat
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_soc
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_vbat
+    chown system system /sys/module/oplus_chg/parameters/sub_gauge_dbg_ibat
+    chown system system /sys/module/oplus_chg/parameters/sub_gauge_dbg_tbat
+    chown system system /sys/module/oplus_chg/parameters/sub_gauge_dbg_vbat
+    chown system system /sys/module/oplus_chg_v2/parameters/gauge_dbg_tbat
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /proc/charger_cycle
+    chown system system /sys/class/oplus_chg/battery/pkg_name
+    chown system system /sys/class/oplus_chg/common/chg_olc_config
+    chown system system /sys/class/oplus_chg/battery/slow_chg_en
+    chmod 0644 /sys/class/power_supply/battery/time_to_full_now
+    chown system system /sys/class/power_supply/battery/time_to_full_now
+    chown system system /sys/class/oplus_chg/common/battlog_push_config
+
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_chg
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_rechg
+    chown system system /sys/class/oplus_chg/battery/short_ic_volt_thresh
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_value
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/class/power_supply/usb/type
+
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/module/oplus_gauge/parameters/gauge_dbg_tbat
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /sys/class/oplus_chg/battery/bms_heat_temp_compensation
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_count
+    chown system system /sys/class/oplus_chg/common/super_endurance_mode_status
+    chown system system /sys/class/oplus_chg/common/bob_status
+    chown system system /sys/class/oplus_chg/common/bob_status_reg
+    chown system system /sys/class/oplus_chg/common/time_zone
+
+    chown system system /proc/charger/hmac
+    chown system system /proc/charger/integrate_gauge_fcc_flag
+    chown system system /sys/class/oplus_chg/battery/em_mode
+    chown system system /dev/oplus_chg
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_test
+    chown system system /sys/class/oplus_chg/battery/parallel_chg_mos_status
+
+on post-fs-data
+    mkdir /data/vendor/battery 0777 system system
 
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning

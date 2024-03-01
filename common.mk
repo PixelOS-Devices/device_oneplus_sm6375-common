@@ -235,6 +235,9 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
+    init.kernel.post_boot.sh \
+    init.kernel.post_boot-blair.sh \
+    init.kernel.post_boot-holi.sh \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
     init.blair.post_boot.sh \
